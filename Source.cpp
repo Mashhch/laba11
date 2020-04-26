@@ -24,7 +24,7 @@ char* f11(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f1 строка: ");
+    printf("\n f1 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -33,7 +33,7 @@ char* f11(char* s1, char s[20])
 }
 char* f12(char* s1, char s[20])
 {
-    printf("\n f2 строка: ");
+    printf("\n f2 СЃС‚СЂРѕРєР°: ");
     char m[20] = "this is a string kk";
     for (int i = 0; i < 20; i++)
     {
@@ -52,7 +52,7 @@ char* f13(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f3 строка: ");
+    printf("\n f3 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -66,7 +66,7 @@ char* f14(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f4 строка: ");
+    printf("\n f4 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -80,7 +80,7 @@ char* f15(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f5 строка: ");
+    printf("\n f5 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -94,7 +94,7 @@ char* f16(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f6 строка: ");
+    printf("\n f6 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -108,7 +108,7 @@ char* f17(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f7 строка: ");
+    printf("\n f7 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -122,7 +122,7 @@ char* f18(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f8 строка: ");
+    printf("\n f8 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -136,7 +136,7 @@ char* f19(char* s1, char s[20])
     {
         s[i] = m[i];
     }
-    printf("\n f9 строка: ");
+    printf("\n f9 СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < 20; i++)
         printf("%c", s[i]);
     s1 = s;
@@ -144,7 +144,7 @@ char* f19(char* s1, char s[20])
     return s1;
 }
 
-// массив указателей на функции
+// РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С„СѓРЅРєС†РёРё
 void** mass_fint() {
 
     void** funcs = (void**)malloc(9 * sizeof(void*));
@@ -187,28 +187,28 @@ char* concat(int dlins1, int dlins2, char* s1, char* s2, char* s)
         s[i] = s1[i];
     for (int j = 0; j < dlins2; j++)
         s[j + dlins1] = s2[j];
-    printf("\nf1 Склеенная строка: ");
+    printf("\nf1 РЎРєР»РµРµРЅРЅР°СЏ СЃС‚СЂРѕРєР°: ");
     for (int i = 0; i < (dlins1+dlins2); i++)
         printf("%c", s[i]);
     return s;
 }
 
 typedef struct {
-    void** A; // массив
-    int N; // колво элементов в массиве
+    void** A; // РјР°СЃСЃРёРІ
+    int N; // РєРѕР»РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ
     char tip; //  i - integer, c -char
-    char f; // y - это функция, n - нет
-    int dlinstr; // длина строк в массиве
+    char f; // y - СЌС‚Рѕ С„СѓРЅРєС†РёСЏ, n - РЅРµС‚
+    int dlinstr; // РґР»РёРЅР° СЃС‚СЂРѕРє РІ РјР°СЃСЃРёРІРµ
     char* s1;
     int dlins1;
     char* s2;
     int dlins2;
-    char* s; // склеенная строка
-    void** newA; // массив для where
-    void*** ukaznewA; // указатель на массив where
-    int* ukaznewN; //указатель на размер массива newA
-    int newN; // размер массива newA
-    void** newmapA; // массив для map
+    char* s; // СЃРєР»РµРµРЅРЅР°СЏ СЃС‚СЂРѕРєР°
+    void** newA; // РјР°СЃСЃРёРІ РґР»СЏ where
+    void*** ukaznewA; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ where
+    int* ukaznewN; //СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР° newA
+    int newN; // СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР° newA
+    void** newmapA; // РјР°СЃСЃРёРІ РґР»СЏ map
 }Arr;
 
 void* F1( void** newmapA, int N, void** A, char tip, char f, int arg, char* s1[9], char s[9][20])
@@ -219,7 +219,7 @@ void* F1( void** newmapA, int N, void** A, char tip, char f, int arg, char* s1[9
     {
         for (int i = 0; i < N; i++)
         {
-            (int*)newmapA[i] = ((int(*)(int))A[i])(arg) * (-1); // массив чисел * -1              
+            (int*)newmapA[i] = ((int(*)(int))A[i])(arg) * (-1); // РјР°СЃСЃРёРІ С‡РёСЃРµР» * -1              
         }
     }
     if (tip == 'c' && f == 'n') // stroka
@@ -227,7 +227,7 @@ void* F1( void** newmapA, int N, void** A, char tip, char f, int arg, char* s1[9
         for (int i = 0; i < N; i++)
         {
             if ('a' <= *((char*)A[i]) && *((char*)A[i]) <= 'z')
-                (char*)newmapA[i] = *((char*)A[i]) + 'A' - 'a'; //массив первых букв массива переведенных в заглавные
+                (char*)newmapA[i] = *((char*)A[i]) + 'A' - 'a'; //РјР°СЃСЃРёРІ РїРµСЂРІС‹С… Р±СѓРєРІ РјР°СЃСЃРёРІР° РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ
             else  (char*)newmapA[i] = *((char*)A[i]);
         }
     }
@@ -238,7 +238,7 @@ void* F1( void** newmapA, int N, void** A, char tip, char f, int arg, char* s1[9
         {
             
             if ('a' <= *(((char* (*)(char*, char k[20])) A[i]) (s1[i], s[i])) && *(((char* (*)(char*, char k[20])) A[i]) (s1[i], s[i])) <= 'z')
-                (char*)newmapA[i] = *((((char* (*)(char*, char k[20])) A[i])) (s1[i], s[i])) + 'A' - 'a';//массив первых букв строк переведенных в заглавные
+                (char*)newmapA[i] = *((((char* (*)(char*, char k[20])) A[i])) (s1[i], s[i])) + 'A' - 'a';//РјР°СЃСЃРёРІ РїРµСЂРІС‹С… Р±СѓРєРІ СЃС‚СЂРѕРє РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ
             else  (char*)newmapA[i] = *((((char* (*)(char*, char k[20])) A[i])) (s1[i], s[i]));
        
         }
@@ -263,13 +263,13 @@ int boolf(int i, void** A, char tip, char f, int arg, char* s1[9], char s[9][20]
     if (tip == 'c' && f == 'n') // stroka
     {
             if ('A' <= *((char*)A[i]) && *((char*)A[i]) <= 'Z')
-                flag = 1;// строка начинается на заглавную
+                flag = 1;// СЃС‚СЂРѕРєР° РЅР°С‡РёРЅР°РµС‚СЃСЏ РЅР° Р·Р°РіР»Р°РІРЅСѓСЋ
         }
 
     if (tip == 'c' && f == 'y') // char func
     {
             if ('A' <= *(((char* (*)(char*, char k[20])) A[i]) (s1[i], s[i])) && *(((char* (*)(char*, char k[20])) A[i]) (s1[i], s[i])) <= 'Z')
-                flag = 1; // строка начинается на заглавную
+                flag = 1; // СЃС‚СЂРѕРєР° РЅР°С‡РёРЅР°РµС‚СЃСЏ РЅР° Р·Р°РіР»Р°РІРЅСѓСЋ
     }
     if (flag == 1) return 1; else return 0;
 }
@@ -299,13 +299,13 @@ void** where(int* newN, void*** newA, int N, void** A, char tip,  char f, int ar
 
 void ctest( int N, char tip, char f)
 {
-    printf("\nКоличество элементов в массиве: %d", N);
+    printf("\nРљРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ: %d", N);
     if (tip == 'c' && f == 'y')
-        printf("\nМассив хранит указатели на функции, возвращающие указатель на char");
+        printf("\nРњР°СЃСЃРёРІ С…СЂР°РЅРёС‚ СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё, РІРѕР·РІСЂР°С‰Р°СЋС‰РёРµ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° char");
     if (tip == 'i' && f == 'y')
-        printf("\nМассив хранит указатели на функции, возвращающие указатель на int");
+        printf("\nРњР°СЃСЃРёРІ С…СЂР°РЅРёС‚ СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё, РІРѕР·РІСЂР°С‰Р°СЋС‰РёРµ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° int");
     if (tip == 'c' && f == 'n')
-        printf("\nМассив хранит указатели на char");
+        printf("\nРњР°СЃСЃРёРІ С…СЂР°РЅРёС‚ СѓРєР°Р·Р°С‚РµР»Рё РЅР° char");
 }
 
 main()
@@ -339,14 +339,14 @@ main()
         Massiv.newN = 0;
         Massiv.ukaznewN = &Massiv.newN;
         deistvie_int = 10;
-        printf("\n\n0 - Автоматический ввод функций int;\n1 - Автоматический ввод функций char;\n2 - Автоматический ввод строк;\n3 - ручной ввод функций int;\n4 - ручной ввод функций char; \n5 - ручной ввод строк; 6 - concat; \n7 - ctest\nВыход - любая другая клавиша;\n");
+        printf("\n\n0 - РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ int;\n1 - РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ char;\n2 - РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ СЃС‚СЂРѕРє;\n3 - СЂСѓС‡РЅРѕР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ int;\n4 - СЂСѓС‡РЅРѕР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ char; \n5 - СЂСѓС‡РЅРѕР№ РІРІРѕРґ СЃС‚СЂРѕРє; 6 - concat; \n7 - ctest\nР’С‹С…РѕРґ - Р»СЋР±Р°СЏ РґСЂСѓРіР°СЏ РєР»Р°РІРёС€Р°;\n");
         rewind(stdin);
         deistvie = getchar();
 
         if (deistvie >= '0' && deistvie <= '7')
             deistvie_int = (deistvie - '0');
 
-        if (deistvie_int == 0) //Автоматический ввод функций int
+        if (deistvie_int == 0) //РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ int
         {
             flag = 1;
             arg = rand() % 15;
@@ -358,29 +358,29 @@ main()
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
-            printf("Колличество элементов в массиве: %d", Massiv.N);
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на функции 
-                   //указатели на функции
+            printf("РљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ: %d", Massiv.N);
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С„СѓРЅРєС†РёРё 
+                   //СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.A[i] = mass_fint()[i];
-            printf("Значение, подаваемое в функции: %d", arg);
-            printf("\nЗначения функций в массиве:");
+            printf("Р—РЅР°С‡РµРЅРёРµ, РїРѕРґР°РІР°РµРјРѕРµ РІ С„СѓРЅРєС†РёРё: %d", arg);
+            printf("\nР—РЅР°С‡РµРЅРёСЏ С„СѓРЅРєС†РёР№ РІ РјР°СЃСЃРёРІРµ:");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\nf(%d) = ", i);
                 printf("%d", ((int(*)(int))Massiv.A[i])(arg));
             }
             Massiv.newA = (void**)malloc(Massiv.N * sizeof(void*));
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
             map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-            printf("\nMAP: массив из значений функций, умноженных на (-1):\n");
+            printf("\nMAP: РјР°СЃСЃРёРІ РёР· Р·РЅР°С‡РµРЅРёР№ С„СѓРЅРєС†РёР№, СѓРјРЅРѕР¶РµРЅРЅС‹С… РЅР° (-1):\n");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\nf(%d) = ", i);
                 printf("%d", (int*)Massiv.newmapA[i]);
             }
             Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
-            printf("\nWHERE: массив из значений функций, кратных 2:\n");
+            printf("\nWHERE: РјР°СЃСЃРёРІ РёР· Р·РЅР°С‡РµРЅРёР№ С„СѓРЅРєС†РёР№, РєСЂР°С‚РЅС‹С… 2:\n");
             printf("%d", Massiv.newN);
             for (int i = 0; i < Massiv.newN; i++)
             {
@@ -390,7 +390,7 @@ main()
         }
 
 
-        if (deistvie_int == 1)//Автоматический ввод функций char
+        if (deistvie_int == 1)//РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ char
         {
             flag = 1;
                 Massiv.tip= 'c';
@@ -401,52 +401,52 @@ main()
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
-            printf("Колличество элементов в массиве: %d", Massiv.N);
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на функции 
-                   //указатели на функции
+            printf("РљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ: %d", Massiv.N);
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С„СѓРЅРєС†РёРё 
+                   //СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.A[i] = mass_fchar()[i];
-            printf("\nЗначения функций в массиве: ");
+            printf("\nР—РЅР°С‡РµРЅРёСЏ С„СѓРЅРєС†РёР№ РІ РјР°СЃСЃРёРІРµ: ");
             for (int i = 0; i < Massiv.N; i++)
                 (((char* (*)(char*, char k[20])) Massiv.A[i])) (s1[i], s[i]);
 
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
                 Massiv.newN = 0;
-                    printf("\nВызов функций в map"); 
+                    printf("\nР’С‹Р·РѕРІ С„СѓРЅРєС†РёР№ РІ map"); 
                     Massiv.newmapA = map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-                    printf("\nКонец вызова функций в map\n");
-                    printf("\nMAP: массив первых символов строк, переведенных в заглавные : \n");
+                    printf("\nРљРѕРЅРµС† РІС‹Р·РѕРІР° С„СѓРЅРєС†РёР№ РІ map\n");
+                    printf("\nMAP: РјР°СЃСЃРёРІ РїРµСЂРІС‹С… СЃРёРјРІРѕР»РѕРІ СЃС‚СЂРѕРє, РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ : \n");
                     for (int i = 0; i < Massiv.N; i++)
                     {
                         printf("\nf(%d) = ", i+1);
                         printf("%c", (char*)Massiv.newmapA[i]);
                     }
-                    printf("\nВызов функций в where");
+                    printf("\nР’С‹Р·РѕРІ С„СѓРЅРєС†РёР№ РІ where");
                     Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
-                    printf("\nКонец вызова функций в where\n");
-                    printf("\nWhere: массив функций, возвращающих строки, начинающиеся на заглавные буквы:\n");
+                    printf("\nРљРѕРЅРµС† РІС‹Р·РѕРІР° С„СѓРЅРєС†РёР№ РІ where\n");
+                    printf("\nWhere: РјР°СЃСЃРёРІ С„СѓРЅРєС†РёР№, РІРѕР·РІСЂР°С‰Р°СЋС‰РёС… СЃС‚СЂРѕРєРё, РЅР°С‡РёРЅР°СЋС‰РёРµСЃСЏ РЅР° Р·Р°РіР»Р°РІРЅС‹Рµ Р±СѓРєРІС‹:\n");
                     for (int i = 0; i < Massiv.newN; i++)
                     {
                         (((char* (*)(char*, char k[20])) Massiv.newA[i])) (s1[i], s[i]);
                     }
         }
 
-        if (deistvie_int == 2)//Автоматический ввод строк
+        if (deistvie_int == 2)//РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРёР№ РІРІРѕРґ СЃС‚СЂРѕРє
         {
             flag = 1;
             Massiv.tip = 'c';
             Massiv.f = 'n';
             Massiv.dlinstr = rand() % 33 + 1;
-            //массив строк длины dlinstr
+            //РјР°СЃСЃРёРІ СЃС‚СЂРѕРє РґР»РёРЅС‹ dlinstr
             Massiv.N = rand() % 33 + 1;
             Massiv.newmapA = (void**)malloc(Massiv.N * sizeof(int));
             Massiv.newA = (void**)malloc(Massiv.N * sizeof(void*));
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
-            printf("\nКолличество элементов в массиве: %d", Massiv.N);
-            printf("\nДлина строк: %d", Massiv.dlinstr);
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на строки
+            printf("\nРљРѕР»Р»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ: %d", Massiv.N);
+            printf("\nР”Р»РёРЅР° СЃС‚СЂРѕРє: %d", Massiv.dlinstr);
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° СЃС‚СЂРѕРєРё
             char* a = (char*)malloc((Massiv.N) * Massiv.dlinstr * sizeof(char));
             for (int i = 0; i < Massiv.N; i++)
             {
@@ -458,68 +458,68 @@ main()
                 }
                 Massiv.A[i] = a + i * Massiv.dlinstr;
             }
-            printf("\n Cтроки в динамическом массиве:");
+            printf("\n CС‚СЂРѕРєРё РІ РґРёРЅР°РјРёС‡РµСЃРєРѕРј РјР°СЃСЃРёРІРµ:");
             for (int i = 0; i < Massiv.N; i++)
             {
-                printf("\n %d строка:", i);
+                printf("\n %d СЃС‚СЂРѕРєР°:", i);
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.A[i] + j));
             }
 
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
             Massiv.newN = 0;
             Massiv.newmapA = map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-            printf("\nMAP: массив первых символов строк, переведенных в заглавные : \n");
+            printf("\nMAP: РјР°СЃСЃРёРІ РїРµСЂРІС‹С… СЃРёРјРІРѕР»РѕРІ СЃС‚СЂРѕРє, РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ : \n");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\ns%d - ", i);
                 printf("%c", (char*)Massiv.newmapA[i]);
             }
-            printf("\nWHERE: массив строк, начинающихся на заглавную букву:\n");
+            printf("\nWHERE: РјР°СЃСЃРёРІ СЃС‚СЂРѕРє, РЅР°С‡РёРЅР°СЋС‰РёС…СЃСЏ РЅР° Р·Р°РіР»Р°РІРЅСѓСЋ Р±СѓРєРІСѓ:\n");
             Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
             for (int i = 0; i < Massiv.newN; i++)
             {
-                printf("\n %d строка:", i);
+                printf("\n %d СЃС‚СЂРѕРєР°:", i);
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.newA[i] + j));
             }
         }
 
-        if (deistvie_int == 3)//ручной ввод функиций int
+        if (deistvie_int == 3)//СЂСѓС‡РЅРѕР№ РІРІРѕРґ С„СѓРЅРєРёС†РёР№ int
         {
             flag = 1;
-            printf("\nВведите число, выступающее в качестве аргумента функций: ");
+            printf("\nР’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ, РІС‹СЃС‚СѓРїР°СЋС‰РµРµ РІ РєР°С‡РµСЃС‚РІРµ Р°СЂРіСѓРјРµРЅС‚Р° С„СѓРЅРєС†РёР№: ");
             scanf("%d", &arg);
             Massiv.tip = 'i';
             Massiv.f = 'y';
-            printf("\nВведите количество элементов в массиве(<10): ");
+            printf("\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ(<10): ");
             scanf("%d", &Massiv.N);
             Massiv.newmapA = (void**)malloc(Massiv.N * sizeof(int));
             Massiv.newA = (void**)malloc(Massiv.N * sizeof(void*));
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на функции 
-                   //указатели на функции
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С„СѓРЅРєС†РёРё 
+                   //СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.A[i] = mass_fint()[i];
-            printf("\nЗначения функций в массиве: ");
+            printf("\nР—РЅР°С‡РµРЅРёСЏ С„СѓРЅРєС†РёР№ РІ РјР°СЃСЃРёРІРµ: ");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\nf(%d) = ", i);
                 printf("%d", ((int(*)(int))Massiv.A[i])(arg));
             }
 
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
                     map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-                    printf("\n\nMAP: массив из значений функций, умноженных на (-1):\n");
+                    printf("\n\nMAP: РјР°СЃСЃРёРІ РёР· Р·РЅР°С‡РµРЅРёР№ С„СѓРЅРєС†РёР№, СѓРјРЅРѕР¶РµРЅРЅС‹С… РЅР° (-1):\n");
                     for (int i = 0; i < Massiv.N; i++)
                     {
                         printf("\nf(%d) = ", i);
                         printf("%d", (int*)Massiv.newmapA[i]);
                     }
                     Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
-                    printf("\n\nWHERE: массив из значений функций, кратных 2:\n");
+                    printf("\n\nWHERE: РјР°СЃСЃРёРІ РёР· Р·РЅР°С‡РµРЅРёР№ С„СѓРЅРєС†РёР№, РєСЂР°С‚РЅС‹С… 2:\n");
                     for (int i = 0; i < Massiv.newN; i++)
                     {
                         printf("\nf(%d) = ", i);
@@ -527,56 +527,56 @@ main()
                     }
         }
 
-        if (deistvie_int == 4)//Ручной ввод функций char
+        if (deistvie_int == 4)//Р СѓС‡РЅРѕР№ РІРІРѕРґ С„СѓРЅРєС†РёР№ char
         {
             flag = 1;
             Massiv.tip = 'c';
             Massiv.f = 'y';
-            printf("\nВведите количество элементов в массиве(<10)");
+            printf("\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ(<10)");
             scanf("%d", &Massiv.N);
             Massiv.newmapA = (void**)malloc(Massiv.N * sizeof(int));
             Massiv.newA = (void**)malloc(Massiv.N * sizeof(void*));
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на функции 
-                   //указатели на функции
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° С„СѓРЅРєС†РёРё 
+                   //СѓРєР°Р·Р°С‚РµР»Рё РЅР° С„СѓРЅРєС†РёРё
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.A[i] = mass_fchar()[i];
-            printf("\nЗначения функций в массиве:");
+            printf("\nР—РЅР°С‡РµРЅРёСЏ С„СѓРЅРєС†РёР№ РІ РјР°СЃСЃРёРІРµ:");
             for (int i = 0; i < Massiv.N; i++)
                 (((char* (*)(char*, char k[20])) Massiv.A[i])) (s1[i], s[i]);
 
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
             Massiv.newN = 0;
-            printf("\nВызов функций в map");
+            printf("\nР’С‹Р·РѕРІ С„СѓРЅРєС†РёР№ РІ map");
             Massiv.newmapA = map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-            printf("\nКонец вызова функций в map\n");
-            printf("\nMAP: массив первых символов строк, переведенных в заглавные : \n");
+            printf("\nРљРѕРЅРµС† РІС‹Р·РѕРІР° С„СѓРЅРєС†РёР№ РІ map\n");
+            printf("\nMAP: РјР°СЃСЃРёРІ РїРµСЂРІС‹С… СЃРёРјРІРѕР»РѕРІ СЃС‚СЂРѕРє, РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ : \n");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\nf(%d) = ", i + 1);
                 printf("%c", (char*)Massiv.newmapA[i]);
             }
-            printf("\nВызов функций в where");
+            printf("\nР’С‹Р·РѕРІ С„СѓРЅРєС†РёР№ РІ where");
             Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
-            printf("\nКонец вызова функций в where\n");
-            printf("\nWhere: массив функций, возвращающих строки, начинающиеся на заглавные буквы:\n");
+            printf("\nРљРѕРЅРµС† РІС‹Р·РѕРІР° С„СѓРЅРєС†РёР№ РІ where\n");
+            printf("\nWhere: РјР°СЃСЃРёРІ С„СѓРЅРєС†РёР№, РІРѕР·РІСЂР°С‰Р°СЋС‰РёС… СЃС‚СЂРѕРєРё, РЅР°С‡РёРЅР°СЋС‰РёРµСЃСЏ РЅР° Р·Р°РіР»Р°РІРЅС‹Рµ Р±СѓРєРІС‹:\n");
             for (int i = 0; i < Massiv.newN; i++)
             {
                 (((char* (*)(char*, char k[20])) Massiv.newA[i])) (s1[i], s[i]);
             }
         }
 
-        if (deistvie_int == 5) //ручной ввод строк
+        if (deistvie_int == 5) //СЂСѓС‡РЅРѕР№ РІРІРѕРґ СЃС‚СЂРѕРє
         {
             flag = 1;
             Massiv.tip = 'c';
             Massiv.f = 'n';
-            printf("\nВведите количество элементов в массиве: ");
+            printf("\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ: ");
             rewind(stdin);
             scanf("%d", &Massiv.N);
-            printf("\nВведите длину строки: ");
+            printf("\nР’РІРµРґРёС‚Рµ РґР»РёРЅСѓ СЃС‚СЂРѕРєРё: ");
             rewind(stdin);
             scanf("%d", &Massiv.dlinstr);
             rewind(stdin);
@@ -586,13 +586,13 @@ main()
                 Massiv.newA[i] = mass_fint()[i];
             Massiv.ukaznewA = &Massiv.newA;
 
-            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // динамический массив указателей на строки
+            Massiv.A = (void**)malloc(Massiv.N * sizeof(void*)); // РґРёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ СѓРєР°Р·Р°С‚РµР»РµР№ РЅР° СЃС‚СЂРѕРєРё
             char* a = (char*)malloc((Massiv.N) * Massiv.dlinstr * sizeof(char));
-            printf("\nВведите  строки из %d символов(в случае переполнения учитываются первые %d введенных символа)", Massiv.dlinstr, Massiv.dlinstr);
+            printf("\nР’РІРµРґРёС‚Рµ  СЃС‚СЂРѕРєРё РёР· %d СЃРёРјРІРѕР»РѕРІ(РІ СЃР»СѓС‡Р°Рµ РїРµСЂРµРїРѕР»РЅРµРЅРёСЏ СѓС‡РёС‚С‹РІР°СЋС‚СЃСЏ РїРµСЂРІС‹Рµ %d РІРІРµРґРµРЅРЅС‹С… СЃРёРјРІРѕР»Р°)", Massiv.dlinstr, Massiv.dlinstr);
             rewind(stdin);
             for (int i = 0; i < Massiv.N; i++)
             {
-                printf("\n%d строка:", i);
+                printf("\n%d СЃС‚СЂРѕРєР°:", i);
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     scanf("%c", (a + i * Massiv.dlinstr + j));
                 rewind(stdin);
@@ -600,29 +600,29 @@ main()
 
             for (int i = 0; i < Massiv.N; i++)
                 Massiv.A[i] = a + i * Massiv.dlinstr;
-            printf("\n Cтроки в динамическом массиве:");
+            printf("\n CС‚СЂРѕРєРё РІ РґРёРЅР°РјРёС‡РµСЃРєРѕРј РјР°СЃСЃРёРІРµ:");
             for (int i = 0; i < Massiv.N; i++)
             {
-                printf("\n %d строка:", i);
+                printf("\n %d СЃС‚СЂРѕРєР°:", i);
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.A[i] + j));
             }
 
 
-            printf("\nФункции map и where: \n");
+            printf("\nР¤СѓРЅРєС†РёРё map Рё where: \n");
             Massiv.newN = 0;
             Massiv.newmapA = map(Massiv.newmapA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, *ukazf1);
-            printf("\nMAP: массив первых символов строк, переведенных в заглавные : \n");
+            printf("\nMAP: РјР°СЃСЃРёРІ РїРµСЂРІС‹С… СЃРёРјРІРѕР»РѕРІ СЃС‚СЂРѕРє, РїРµСЂРµРІРµРґРµРЅРЅС‹С… РІ Р·Р°РіР»Р°РІРЅС‹Рµ : \n");
             for (int i = 0; i < Massiv.N; i++)
             {
                 printf("\ns%d - ", i);
                 printf("%c", (char*)Massiv.newmapA[i]);
             }
-            printf("\nWHERE: массив строк, начинающихся на заглавную букву:\n");
+            printf("\nWHERE: РјР°СЃСЃРёРІ СЃС‚СЂРѕРє, РЅР°С‡РёРЅР°СЋС‰РёС…СЃСЏ РЅР° Р·Р°РіР»Р°РІРЅСѓСЋ Р±СѓРєРІСѓ:\n");
             Massiv.newA = where(Massiv.ukaznewN, Massiv.ukaznewA, Massiv.N, Massiv.A, Massiv.tip, Massiv.f, arg, s1, s, ukazf2);
             for (int i = 0; i < Massiv.newN; i++)
             {
-                printf("\n %d строка:", i);
+                printf("\n %d СЃС‚СЂРѕРєР°:", i);
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.newA[i] + j));
             }
@@ -632,21 +632,21 @@ main()
         {
             Massiv.dlins1 = rand() % 13 + 1;
             Massiv.dlins2 = rand() % 17 + 1;
-            printf("Длина 1 строки: %d;\n Длина 2 строки: %d", Massiv.dlins1, Massiv.dlins2);
+            printf("Р”Р»РёРЅР° 1 СЃС‚СЂРѕРєРё: %d;\n Р”Р»РёРЅР° 2 СЃС‚СЂРѕРєРё: %d", Massiv.dlins1, Massiv.dlins2);
             Massiv.s1 = (char*)malloc(Massiv.dlins1 * sizeof(char));
             Massiv.s2 = (char*)malloc(Massiv.dlins2 * sizeof(char));
             Massiv.s = (char*)malloc((Massiv.dlins1 + Massiv.dlins2) * sizeof(char));
             int set_len;
             set_len = strlen(SET);
             srand(Massiv.dlins1);
-            printf("\n 1 строка: ");
+            printf("\n 1 СЃС‚СЂРѕРєР°: ");
             for (int i = 0; i < Massiv.dlins1; i++)
             {
                 Massiv.s1[i] = SET[(rand() + i) % set_len];
                 printf("%c", Massiv.s1[i]);
             }
             srand(Massiv.dlins2);
-            printf("\n 2 строка: ");
+            printf("\n 2 СЃС‚СЂРѕРєР°: ");
             for (int i = 0; i < Massiv.dlins2; i++)
             {
                 Massiv.s2[i] = SET[(rand() + i) % set_len];
@@ -659,7 +659,7 @@ main()
         {
             if (flag == 1)
                 ctest(Massiv.N, Massiv.tip, Massiv.f);
-            else printf("Вы не заполнили массив");
+            else printf("Р’С‹ РЅРµ Р·Р°РїРѕР»РЅРёР»Рё РјР°СЃСЃРёРІ");
         }
     }
 }

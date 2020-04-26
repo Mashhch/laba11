@@ -483,6 +483,7 @@ main()
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.newA[i] + j));
             }
+            free(a);
         }
 
         if (deistvie_int == 3)//ручной ввод функиций int
@@ -626,6 +627,7 @@ main()
                 for (int j = 0; j < Massiv.dlinstr; j++)
                     printf("%c", *((char*)Massiv.newA[i] + j));
             }
+            free(a);
         }
 
         if (deistvie_int == 6) //concat
@@ -662,4 +664,7 @@ main()
             else printf("Вы не заполнили массив");
         }
     }
+    free(Massiv.newA);
+    free(Massiv.newmapA);
+    free(Massiv.A);
 }
